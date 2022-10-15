@@ -1,0 +1,210 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4811000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have launched the application",
+            "match": {
+              "location": "stepdefs.LoginStepDefPhaseTwo.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-15T06:36:15.921Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2811000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.Setup()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "This scenario is to define the login happy path",
+        "description": "",
+        "id": "login-feature-scenario;this-scenario-is-to-define-the-login-happy-path",
+        "after": [
+          {
+            "result": {
+              "duration": 134000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 185000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter the correct username and password",
+            "match": {
+              "location": "stepdefs.LoginStepDefPhaseTwo.i_enter_the_correct_username_and_passowrd()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4106000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on the Login Button",
+            "match": {
+              "location": "stepdefs.LoginStepDefPhaseTwo.i_click_on_the_Login_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should land on the home page",
+            "match": {
+              "location": "stepdefs.LoginStepDefPhaseTwo.i_should_land_on_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3992000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have launched the application",
+            "match": {
+              "location": "stepdefs.LoginStepDefPhaseTwo.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-15T06:36:28.046Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2188000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.Setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "This scenario is to define the failure path",
+        "description": "",
+        "id": "login-feature-scenario;this-scenario-is-to-define-the-failure-path",
+        "after": [
+          {
+            "result": {
+              "duration": 119000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 221000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I enter the incorrect username and password",
+            "match": {
+              "location": "stepdefs.LoginStepDefPhaseTwo.i_enter_the_incorrect_username_and_passowrd()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4109000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on the Login Button",
+            "match": {
+              "location": "stepdefs.LoginStepDefPhaseTwo.i_click_on_the_Login_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"h3[@data-test\u003d\u0027error\u0027]\"}\n  (Session info: chrome\u003d106.0.5249.119)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anithas-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:46a:4c6d:5d3d:a305%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/lc/nw2rt7gj2cn...}, goog:chromeOptions: {debuggerAddress: localhost:58693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b0b51447cdba0252452331fca8430853\n*** Element info: {Using\u003dxpath, value\u003dh3[@data-test\u003d\u0027error\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat stepdefs.LoginStepDefPhaseTwo.i_should_get_the_error_message(LoginStepDefPhaseTwo.java:67)\n\tat ✽.I should get the error message \"Epic sadface: Username and password do not match any user in this service\"(file:///Users/anitharaj/MyFirstWorkSpace/PhaseTwoProject/src/test/java/feature/Login.feature:16)\n",
+              "duration": 5050000000,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "I should get the error message \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefs.LoginStepDefPhaseTwo.i_should_get_the_error_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Login feature Scenario",
+    "description": "",
+    "id": "login-feature-scenario",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/Login.feature",
+    "tags": []
+  }
+]
