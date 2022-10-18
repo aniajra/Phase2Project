@@ -12,10 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 		plugin = {"pretty","html:target/html-cucumber","json:target/cucumber.json"},
 		features = "src/test/java/feature", 
 		glue = "stepdefs", 
-		tags = { "@sanity"}
-
-
-)
+		tags = { "@sanity or @regression"})
 
 public class Runner {
 

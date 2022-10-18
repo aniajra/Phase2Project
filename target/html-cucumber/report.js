@@ -34,7 +34,7 @@ formatter.scenario({
 });
 formatter.step({
   "name": "I enter the correct username and password",
-  "keyword": "And "
+  "keyword": "When "
 });
 formatter.match({
   "location": "stepdefs.LoginStepDefPhaseTwo.i_enter_the_correct_username_and_passowrd()"
@@ -84,7 +84,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "This scenario is to define the failure path",
+  "name": "This scenario is to define the failure path for login",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -121,8 +121,645 @@ formatter.match({
   "location": "stepdefs.LoginStepDefPhaseTwo.i_should_get_the_error_message(java.lang.String)"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"h3[@data-test\u003d\u0027error\u0027]\"}\n  (Session info: chrome\u003d106.0.5249.119)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Anithas-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:46a:4c6d:5d3d:a305%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/lc/nw2rt7gj2cn...}, goog:chromeOptions: {debuggerAddress: localhost:58693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b0b51447cdba0252452331fca8430853\n*** Element info: {Using\u003dxpath, value\u003dh3[@data-test\u003d\u0027error\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat stepdefs.LoginStepDefPhaseTwo.i_should_get_the_error_message(LoginStepDefPhaseTwo.java:67)\n\tat ✽.I should get the error message \"Epic sadface: Username and password do not match any user in this service\"(file:///Users/anitharaj/MyFirstWorkSpace/PhaseTwoProject/src/test/java/feature/Login.feature:16)\n",
-  "status": "failed"
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have launched the application",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_have_launched_the_application()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "This scenario is to define the login success path by passing the values",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@regression"
+    }
+  ]
+});
+formatter.step({
+  "name": "I enter the username as \"standard_user\" and Password as \"secret_sauce\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_enter_the_username_as_and_Password_as(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on the Login Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_click_on_the_Login_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should land on the home page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_should_land_on_the_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "This sceanrio is to define the login failure path by passing the values",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@regression"
+    }
+  ]
+});
+formatter.step({
+  "name": "I enter the username as \"\u003cUserName\u003e\" and Password as \"\u003cPassword\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "I click on the Login Button",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "I should get the error message \"Epic sadface: Username and password do not match any user in this service\"",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "UserName",
+        "Password"
+      ]
+    },
+    {
+      "cells": [
+        "standard",
+        "test"
+      ]
+    },
+    {
+      "cells": [
+        "user",
+        "test123"
+      ]
+    }
+  ]
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have launched the application",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_have_launched_the_application()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "This sceanrio is to define the login failure path by passing the values",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@regression"
+    }
+  ]
+});
+formatter.step({
+  "name": "I enter the username as \"standard\" and Password as \"test\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_enter_the_username_as_and_Password_as(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on the Login Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_click_on_the_Login_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should get the error message \"Epic sadface: Username and password do not match any user in this service\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_should_get_the_error_message(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have launched the application",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_have_launched_the_application()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "This sceanrio is to define the login failure path by passing the values",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@regression"
+    }
+  ]
+});
+formatter.step({
+  "name": "I enter the username as \"user\" and Password as \"test123\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_enter_the_username_as_and_Password_as(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on the Login Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_click_on_the_Login_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should get the error message \"Epic sadface: Username and password do not match any user in this service\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_should_get_the_error_message(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/java/feature/homepage.feature");
+formatter.feature({
+  "name": "To add a product to cart and product name passed via feature",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have launched the application",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_have_launched_the_application()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I enter the correct username and password",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_enter_the_correct_username_and_passowrd()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on the Login Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_click_on_the_Login_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should land on the home page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_should_land_on_the_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "This scenario is to successfully add one product to the cart",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@sanity"
+    }
+  ]
+});
+formatter.step({
+  "name": "I am adding \"Sauce Labs Backpack\" to the cart",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefs.HomePageStepDefPhaseTwo2.i_am_adding_to_the_cart(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The product is added to cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefs.HomePageStepDefPhaseTwo2.the_product_is_added_to_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Item number changed to \"1\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefs.HomePageStepDefPhaseTwo2.item_number_changed_to(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have launched the application",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_have_launched_the_application()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I enter the correct username and password",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_enter_the_correct_username_and_passowrd()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on the Login Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_click_on_the_Login_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should land on the home page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_should_land_on_the_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "This scenario is to add multiple products to the cart in one session",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@sanity"
+    }
+  ]
+});
+formatter.step({
+  "name": "I am adding below products to the cart",
+  "rows": [
+    {},
+    {}
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefs.HomePageStepDefPhaseTwo2.i_am_adding_below_product_to_the_cart(java.util.List\u003cjava.lang.String\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Item number changed to \"2\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefs.HomePageStepDefPhaseTwo2.item_number_changed_to(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "This scenario is to add multiple products to the cart in multiple sessions",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@regression"
+    }
+  ]
+});
+formatter.step({
+  "name": "I am adding \"\u003cProduct_Name\u003e\" to the cart",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "The product with \"\u003cProduct_Name\u003e\" is added to cart",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "Item number changed to \"1\"",
+  "keyword": "And "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "Product_Name"
+      ]
+    },
+    {
+      "cells": [
+        "Sauce Labs Bike Light"
+      ]
+    },
+    {
+      "cells": [
+        "Sauce Labs Fleece Jacket"
+      ]
+    }
+  ]
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have launched the application",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_have_launched_the_application()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I enter the correct username and password",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_enter_the_correct_username_and_passowrd()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on the Login Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_click_on_the_Login_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should land on the home page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_should_land_on_the_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "This scenario is to add multiple products to the cart in multiple sessions",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@regression"
+    }
+  ]
+});
+formatter.step({
+  "name": "I am adding \"Sauce Labs Bike Light\" to the cart",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefs.HomePageStepDefPhaseTwo2.i_am_adding_to_the_cart(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The product with \"Sauce Labs Bike Light\" is added to cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefs.HomePageStepDefPhaseTwo2.the_product_with_is_added_to_cart(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Item number changed to \"1\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefs.HomePageStepDefPhaseTwo2.item_number_changed_to(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I have launched the application",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_have_launched_the_application()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I enter the correct username and password",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_enter_the_correct_username_and_passowrd()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on the Login Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_click_on_the_Login_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should land on the home page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefs.LoginStepDefPhaseTwo.i_should_land_on_the_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "This scenario is to add multiple products to the cart in multiple sessions",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@regression"
+    }
+  ]
+});
+formatter.step({
+  "name": "I am adding \"Sauce Labs Fleece Jacket\" to the cart",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefs.HomePageStepDefPhaseTwo2.i_am_adding_to_the_cart(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The product with \"Sauce Labs Fleece Jacket\" is added to cart",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefs.HomePageStepDefPhaseTwo2.the_product_with_is_added_to_cart(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Item number changed to \"1\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefs.HomePageStepDefPhaseTwo2.item_number_changed_to(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
