@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="9" failures="0" name="stepdefs.TestRunner" time="84.446" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.16.1+0"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk@11/11.0.16.1_1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/anitharaj/MyFirstWorkSpace/PhaseTwoProject"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="AU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/anitharaj/MyFirstWorkSpace/PhaseTwoProject"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.16.1+0"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/lc/nw2rt7gj2cndk0k4k7x5b2w40000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/anitharaj/Downloads/apache-maven-3.8.6/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/anitharaj/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/anitharaj/Downloads/apache-maven-3.8.6/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.15.7"/>
+    <property name="library.jansi.path" value="/Users/anitharaj/Downloads/apache-maven-3.8.6/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/anitharaj"/>
+    <property name="user.timezone" value="Australia/Brisbane"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="anitharaj"/>
+    <property name="java.class.path" value="/Users/anitharaj/Downloads/apache-maven-3.8.6/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk@11/11.0.16.1_1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.16.1"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="maven.home" value="/Users/anitharaj/Downloads/apache-maven-3.8.6"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2022-08-12"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="Login feature Scenario" name="This scenario is to define the login happy path" time="9.87"/>
+  <testcase classname="Login feature Scenario" name="This scenario is to define the failure path for login" time="8.518"/>
+  <testcase classname="Login feature Scenario" name="This scenario is to define the login success path by passing the values" time="8.274"/>
+  <testcase classname="Login feature Scenario" name="This sceanrio is to define the login failure path by passing the values" time="7.611"/>
+  <testcase classname="Login feature Scenario" name="This sceanrio is to define the login failure path by passing the values" time="8.694"/>
+  <testcase classname="To add a product to cart and product name passed via feature" name="This scenario is to successfully add one product to the cart" time="9.46"/>
+  <testcase classname="To add a product to cart and product name passed via feature" name="This scenario is to add multiple products to the cart in one session" time="8.041"/>
+  <testcase classname="To add a product to cart and product name passed via feature" name="This scenario is to add multiple products to the cart in multiple sessions" time="8.706"/>
+  <testcase classname="To add a product to cart and product name passed via feature" name="This scenario is to add multiple products to the cart in multiple sessions" time="15.272"/>
+</testsuite>

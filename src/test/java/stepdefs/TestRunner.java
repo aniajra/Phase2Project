@@ -14,6 +14,6 @@ import io.cucumber.junit.CucumberOptions;
 		glue = "stepdefs", 
 		tags = { "@sanity or @regression"})
 
-public class Runner {
+public class TestRunner {
 
 }
